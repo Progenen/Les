@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les</title>
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="content">
@@ -17,31 +21,37 @@
                                 <img src="img/logo.png" alt="">
                             </a>
                         </div>
-                        <div class="header__col header__col--menu">
-                            <button class="header__burger">
-                                <span></span><span></span><span></span>
+                        <div class="header__col header__col--burger">
+
+                            <button class="header__burger header__burger-toggle">
+                                <span></span><span></span><span></span><span></span>
                             </button>
+                        </div>
+                        <div class="header__col header__col--menu">
                             <nav class='header__menu'>
                                 <ul class='header__menu-list'>
-                                    <li class='header__menu-item'><a href='#' class='header__menu-link'>
-                                        КАТАЛОГ
-                                    </a></li>
-                                    <li class='header__menu-item'><a href='#' class='header__menu-link'>
-                                        ПОЛУЧИТЬ СКИДКУ
-                                    </a></li>
-                                    <li class='header__menu-item'><a href='#' class='header__menu-link'>
-                                        БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
-                                    </a></li>
+                                    <li class='header__menu-item'><a href='#brus' class='header__menu-link'>
+                                            КАТАЛОГ
+                                        </a></li>
+                                    <li class='header__menu-item'><a href='#cheap' class='header__menu-link'>
+                                            ПОЛУЧИТЬ СКИДКУ
+                                        </a></li>
+                                    <li class='header__menu-item'><a href='#question' class='header__menu-link'>
+                                            БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                                        </a></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="header__col header__col--ui">
                             <div class="header__ui">
                                 <a href="#" class="header__phone phone">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                    </svg>
                                     8-911-442-03-03
                                 </a>
-                                <button class="header__call call btn">
+                                <button class="header__call call btn open-popup-link" data-mfp-src="#popup">
                                     Заказать звонок
                                 </button>
                             </div>
@@ -50,20 +60,666 @@
                 </div>
             </header>
             <section class="offer">
+                <div class="offer__separator">
+                    <svg version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0 100 H 100 V 0 Z" style="fill: white;"></path>
+                    </svg>
+                </div>
                 <div class="container">
-                    <h1>
-                        <span>________</span>
+                    <h1 data-aos="fade-right"  data-aos-offset="50" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <span>&nbsp________</span>
                         БРУС СУХОЙ СТРОГАННЫЙ ОТ ПРОИЗВОДИТЕЛЯ В ВОЛОГДЕ
-                        <span>________  </span>
+                        <span>________ </span>
                     </h1>
-                    <p class="offer__descr">
-                        <span>______</span> 
+                    <p  data-aos="fade-left"  data-aos-offset="50" data-aos-duration="500" data-aos-easing="ease-in-sine" class="offer__descr">
+                        <span>______</span>
                         ценим Вас и Ваше время - предлагаем только качественный брус по действительно низкой цене
                         <span>______</span>
                     </p>
+                    <div class="offer__btns">
+                        <a href="#brus" class="offer__btn btn">
+                            БРУСОК
+                        </a>
+                        <a href="#doska" class="offer__btn btn">
+                            Доска
+                        </a>
+                        <a href="#reika" class="offer__btn btn">
+                            Рейка
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <section class="catalog" id="brus">
+                <div class="container">
+                    <h2>
+                        Брусок
+                    </h2>
+                    <div class="catalog__items">
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn open-popup-product-link" data-title="Брус 50х40"
+                                    data-img="img/content/catalog-item.jpg" data-mfp-src="#popup-product">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog" id="doska">
+                <div class="container">
+                    <h2>
+                        Брусок
+                    </h2>
+                    <div class="catalog__items">
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item2.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Доска</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog" id="reika">
+                <div class="container">
+                    <h2>
+                        Брусок
+                    </h2>
+                    <div class="catalog__items">
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item2.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Доска</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="catalog__item-inner">
+                                <div class="catalog__item-img">
+                                    <img src="img/content/catalog-item.jpg" alt="">
+                                </div>
+                                <ul class="catalog__item-list">
+                                    <li>Брус 50х40</li>
+                                    <li>2.0 м/2.5 м/3.0 м</li>
+                                    <li>материал: ель/сосна</li>
+                                    <li>23500 р/куб.м.</li>
+                                    <li>47.00 р/м.п. </li>
+                                </ul>
+                                <button class="catalog__item-btn btn">
+                                    Заказать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reasons">
+                <div class="container">
+                    <h2 data-aos="fade-in" data-aos-offset="50" data-aos-duration="500">
+                        Почему покупают сухой брус именно у нас
+                    </h2>
+                    <div class="reasons__items">
+                        <div class="reasons__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <img src="img/content/reasons/reasons-item1.png" alt="">
+                            <p>
+                                Гарантия качества. Запас товара на складе
+                            </p>
+                        </div>
+                        <div class="reasons__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="400">
+                            <img src="img/content/reasons/reasons-item2.png" alt="">
+                            <p>
+                                Строгий внутренний контроль качества перед выдачей
+                            </p>
+                        </div>
+                        <div class="reasons__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="300">
+                            <img src="img/content/reasons/reasons-item3.png" alt="">
+                            <p>
+                                Доставка по городу, области и другим регионам
+                            </p>
+                        </div>
+                        <div class="reasons__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="200">
+                            <img src="img/content/reasons/reasons-item4.png" alt="">
+                            <p>
+                                Удобные и выгодные условия для оптовиков
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cheap" id="cheap">
+                <div class="cheap__separator cheap__separator-top">
+                    <svg version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0 0 L 50 100 L 100 0 Z" style="fill: rgb(246, 246, 246);"></path>
+                    </svg>
+                </div>
+                <div class="cheap__separator cheap__separator-bottom">
+                    <svg version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0 100 H 100 V 0 Z" style="fill: white;"></path>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="cheap__col cheap__col--left">
+                            <h2 data-aos="fade-right" data-aos-offset="50" data-aos-duration="300">
+                                <span class="text-color-green down-space">
+                                    _____
+                                </span>
+                                Хотите дешевле?
+                                <span class="text-color-light-green">
+                                    Скидка 5%
+                                </span>
+                                при заказе онлайн
+                                <span class="text-color-green down-space">_____</span>
+                            </h2>
+                            <p data-aos="fade-right" data-aos-offset="50" data-aos-duration="300">
+                                У нас есть специальное предложение для тех, кто заказывает сухой брус через сайт
+                            </p>
+                        </div>
+                        <div class="cheap__col cheap__col--right">
+                            <form action="#" class="form" data-aos="fade-up" data-aos-offset="50" data-aos-duration="500">
+                                <div class="form__title">
+                                    Оставьте Ваши контактные данные, мы с Вами свяжемся и предоставим скидку
+                                </div>
+
+                                <div class="form__input input">
+                                    <input type="text" name="name" placeholder="_">
+                                    <span>Ваше имя</span>
+                                </div>
+                                <div class="form__input input">
+                                    <input type="tel" name="phone" placeholder="_">
+                                    <span>Номер телефона *</span>
+                                </div>
+                                <button class="form__btn btn" type="submit">
+                                    Получить скидку
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="dominates">
+                <div class="container">
+                    <div class="row">
+                        <h2 data-aos="fade-in" data-aos-offset="50" data-aos-duration="500">Преимущества и применение сухого бруса</h2>
+                    </div>
+                    <div class="row">
+                        <div class="dominates__col dominates__col--img">
+                            <img data-aos="fade-up" data-aos-offset="50" data-aos-duration="500" src="img/content/dominates-img.jpg" alt="">
+                        </div>
+                        <div class="dominates__col dominates__col--text" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                            <div class="descr">
+                                <p>
+                                    Мы изготавливаем брус исключительно из хвойных пород дерева, таких как ель и сосна.
+                                    Брус после изготовления тщательно просушивается в сушильной камере, поэтому имеет
+                                    влажность 10-12%. Это необходимый процесс для того, чтобы сразу начать строительство
+                                    из материала.
+                                </p>
+                                <p>
+                                    Сухой брус – универсальный материал для строительства. Его используют во внешних
+                                    строительных работах и во внутренних отделочных. Например, для возведения каркасов
+                                    домов, бань, межэтажных перекрытий, возведения колонн и лестниц, в дизайне
+                                    инетреьера и так далее.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="delivery dominates">
+                <div class="delivery__separator">
+                    <svg version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0 0 H 100 V 100 Z" style="fill: white;"></path>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <h2 data-aos="fade-in" data-aos-offset="50" data-aos-duration="500">Оплата и доставка</h2>
+                    </div>
+                    <div class="row">
+                        <div class="delivery__col delivery__col--left dominates__col dominates__col--text">
+                            <div class="descr" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                                <p>
+                                    Осуществляем доставку пиломатериалов по Вологде, Вологодской области и другим
+                                    регионам.
+                                </p>
+                                <p>
+                                    Стоимость доставки от 350 рублей. Точную стоимость Вы можете уточнить по номеру:
+                                    <strong>8-911-442-03-03.</strong>
+                                </p>
+                                <p>
+                                    Также Вы всегда можете самостоятельно приехать за заказом в любой день недели с 8 до
+                                    19 часов на наши склады, расположенные по адресам:
+                                    <br />
+                                    <br />
+                                    Вологда, Преображенского, 59 (напротив АЗС Лукойл). <br />
+                                    Вологда, Преображенского, 55б (территория Трактороцентр)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="delivery__col delivery__col--right dominates__col dominates__col--img">
+                            <img data-aos="fade-up" data-aos-offset="50" data-aos-duration="500" src="img/content/delivery-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="question cheap" id="question">
+                <div class="cheap__separator cheap__separator-top">
+                    <svg version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0 0 V 100 L 100 0 Z" style="fill: rgb(246, 246, 246);"></path>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="cheap__col cheap__col--left">
+                            <h2 data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                                <span class="text-color-green down-space">
+                                    _____
+                                </span>
+                                Остались вопросы? Задайте их нам!
+                                <span class="text-color-green down-space">_____</span>
+                            </h2>
+                            <p data-aos="fade-right" data-aos-offset="50" data-aos-duration="300">
+                                Оставьте Ваши контактные данные, мы с Вами свяжемся, ответим на вопросы и поможем в
+                                выборе сухого бруса
+                            </p>
+                        </div>
+                        <div class="cheap__col cheap__col--right">
+                            <form action="#" class="form" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                                <div class="form__title">
+                                    Заполните форму, остальное мы возьмем на себя
+                                </div>
+
+                                <div class="form__input input">
+                                    <input type="text" name="name" placeholder="_">
+                                    <span>Ваше имя</span>
+                                </div>
+                                <div class="form__input input">
+                                    <input type="tel" name="phone" placeholder="_">
+                                    <span>Номер телефона *</span>
+                                </div>
+                                <button class="form__btn btn" type="submit">
+                                    Получить консультацию
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__col footer__col--logo">
+                        <a class="footer__logo" href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <span class="footer__copyright">
+                            © 2022 ООО "Русский лес"
+                        </span>
+                    </div>
+                    <div class="footer__col footer__col--socials">
+                        <ul class="footer__socials">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM318.5 309.5C275 366 238.2 394.3 208.1 394.3c-18.7 0-34.4-17.2-47.3-51.6c-3.8-13.9-7.3-26.9-10.5-39c-18.2-68.3-28.6-107.4-46.2-107.4c-2.4 0-10.8 5-25.1 15.1L64 192c7-6.1 13.9-12.4 20.6-18.5c29.1-26.3 55.6-50.3 73.5-51.9c24.9-2.4 40.2 14.6 46 51.1c20.5 129.6 29.6 149.2 66.8 90.5c13.4-21.2 20.6-37.2 21.5-48.3c3.4-32.8-25.6-30.6-45.2-22.2c15.7-51.5 45.8-76.5 90.1-75.1c32.9 1 48.4 22.4 46.5 64c-1.4 31.1-23.2 73.8-65.3 127.9z" />
+                                    </svg>
+                                    Вконтакте
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                    Инстаграм
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:opt@rusles-35.ru">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+                                    </svg>
+                                    opt@rusles-35.ru
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+                                    </svg>
+                                    Фейсбук
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col footer__col--ui">
+                        <div class="footer__ui">
+                            <a href="#" class="footer__phone phone">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                </svg>
+                                8-911-442-03-03
+                            </a>
+                            <button class="footer__call call btn">
+                                Заказать звонок
+                            </button>
+                            <span class="footer__schedule">
+                                график работы: пн-пт с 8 до 19; сб-вс с 8 до 17
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+    <div class="modal modal-call" id="popup">
+        <div class="modal__header modal-call__header">
+            <button class="close nofonts">×</button>
+        </div>
+        <div class="modal__body modal-call__body">
+            <form action="#" class="form">
+                <div class="form__title">
+                    Заполните форму, остальное мы возьмем на себя
+                </div>
+
+                <div class="form__input input">
+                    <input type="text" name="name" placeholder="_">
+                    <span>Ваше имя</span>
+                </div>
+                <div class="form__input input">
+                    <input type="tel" name="phone" placeholder="_">
+                    <span>Номер телефона *</span>
+                </div>
+                <button class="form__btn btn" type="submit">
+                    Получить консультацию
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-product" id="popup-product">
+        <div class="modal__header modal-call__header">
+            <button class="close nofonts">×</button>
+        </div>
+        <div class="modal__body modal-product__body">
+            <div class="row">
+                <div class="modal-product__col modal-product__col--left">
+                    <h2>Заказать сухой брус</h2>
+                    <p>
+                        Просто укажите Ваши контакты, все остальное сделаем мы: свяжемся с Вами для уточнения заказа,
+                        предоставим необходимую информацию, ответим на вопросы
+                    </p>
+                </div>
+                <div class="modal-product__col modal-product__col--right">
+                    <img src="img/content/catalog-item.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <form action="#" class="modal-product__form">
+                    <div class="modal-product__input input">
+                        <input type="text" name="name" placeholder="_">
+                        <span>Ваше имя</span>
+                    </div>
+                    <div class="modal-product__input input">
+                        <input type="tel" name="phone" placeholder="_">
+                        <span>Номер телефона *</span>
+                    </div>
+                    <button class="modal-product__btn form__btn btn" type="submit">
+                        Отправить
+                    </button>
+                    <div class="modal-product__checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <div class="checkbox__input">
+                                <svg viewBox="0 0 18 18" version="1.1">
+                                    <g>
+                                        <rect fill="none" x="0" y="0" width="18" height="18"></rect>
+                                        <polygon fill="#FFFFFF" points="8 10 14 4 16 6 8 14 2 8 4 6"></polygon>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>
+                                Даю согласие на обработку персональных данных
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/magnific-popup.min.js"></script>
+    <script src="js/libs/aos.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
